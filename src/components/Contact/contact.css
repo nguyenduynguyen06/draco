@@ -1,0 +1,128 @@
+/* Contact.css */
+
+.contact-us-container {
+    background-color: #f2f2f2;
+    padding: 0;
+    margin: 0;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .contact-us-header {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    height: 260px;
+    margin-top: 100px;
+  }
+  
+  .contact-us-header h2 {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+  
+  .hihi {
+    margin: 40px 0 0;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+  }
+  
+  .contact-us-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 0;
+    padding: 0 20px;
+  }
+  
+  .contact-card {
+    background: white;
+    padding: 30px;
+    width: 300px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Icon styling */
+  .icon-style {
+    font-size: 50px;
+    color: #044026;
+    margin-bottom: 20px;
+  }
+  
+  /* Title styling inside card */
+  .contact-card h3 {
+    color: #000000;
+    margin: 20px 0 10px;
+    font-size: 22px;
+  }
+  
+  /* Paragraph text styling inside card */
+  .contact-card p {
+    color: #000000;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Footer styling */
+  .contact-us-footer {
+    margin-top: 30px;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 40px;
+    line-height: 1.6; /* Adjust the line height to increase/decrease spacing between lines */
+  }
+  
+  .contact-us-footer p {
+    margin: 5px 0;
+  }
+  
+  /* Responsive styling for mobile devices */
+  @media only screen and (max-width: 768px) {
+    .contact-us-cards {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .contact-card {
+      width: 90%;
+    }
+  
+    .icon-style {
+      font-size: 40px; /* Adjust icon size for mobile */
+    }
+  
+    .contact-card h3 {
+      font-size: 20px; /* Adjust heading size for mobile */
+    }
+  
+    .contact-card p {
+      font-size: 14px; /* Adjust paragraph size for mobile */
+    }
+  
+    .contact-us-header h1 {
+      font-size: 36px; /* Adjust main heading size for mobile */
+    }
+  
+    .contact-us-header h2 {
+      font-size: 16px; /* Adjust subheading size for mobile */
+    }
+  
+    .contact-us-footer {
+      font-size: 14px; /* Adjust footer text size for mobile */
+    }
+  }

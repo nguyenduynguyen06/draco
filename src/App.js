@@ -1,15 +1,26 @@
-import Navbar from "./components/Navbar";
-import Header from "./components/Header";
-import Main from "./components/Main";
-import Footer from "./components/Footer";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { routes } from "./components/routes/routes";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Header />
-      <Main />
-      <Footer />
+      <div>
+      <Router>
+        <Routes>
+          {routes.map((route) => {
+            const Page = route.page;
+            return (
+              <Route key={route.path} path={route.path} element={
+                <>
+                  <Page />
+                </>
+              } />
+            );
+          })}
+        </Routes>
+      </Router>
+    </div>
     </>
   );
 }

@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.about-section {
+    margin-top: 115px;
+    display: flex;
+    background-color: #002855;
+    height: 400px;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+.about-section-text {
+    flex: 1;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+.about-section-image {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about-section-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.about-description {
+    margin: 70px auto;
+    width: 50%;
+    text-align: left;
+    font-size: 22px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    color: #333333;
+    line-height: 1.6;
+}
+
+.about-description p {
+    margin-bottom: 20px;
+}
+
+.container-aboutt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.item-about {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #000;
+    margin: 0 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 2px solid #7b797e;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+.item-about:hover {
+    background-color: #d1cccc;
+    opacity: 0.8;
+    border: 2px solid #110925;
+}
+
+.vision-section {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    border: 1px solid #000;
+    height: auto;
+}
+
+.vision-image {
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+}
+
+.vision-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.vision-content {
+    width: 33%;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.vision-content h2 {
+    font-size: 38px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    /* Khoảng cách dưới tiêu đề */
+}
+
+.vision-content h3 {
+    font-size: 21px;
+    font-weight: normal;
+    color: #333;
+    margin: 10px 0 20px 0; 
+}
+
+.vision-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.vision-content ul li {
+    font-size: 21px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .about-section-text {
+        padding-left: 10px;
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .about-section-image {
+        justify-content: center;
+        width: 100%;
+    }
+    .about-section-image img {
+        width: 100%;
+        height: auto;
+        object-fit: cover; 
+    }
+    .about-description {
+        width: 90%;
+        font-size: 18px;
+        margin: 20px auto;
+    }
+
+    .container-aboutt {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .item-about {
+        width: 100px;
+        height: 100px;
+        margin: 10px 0;
+        font-size: 14px;
+    }
+
+    .vision-section {
+        flex-direction: column;
+        height: auto;
+        border: 1px solid #000000;
+    }
+
+    .vision-image {
+        width: 100%;
+        border: 2px solid #000000;
+    }
+
+    .vision-content {
+        width: 90%;
+        padding: 10px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .vision-content h2 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .vision-content h3 {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .vision-content ul {
+        padding-left: 15px;
+    }
+
+    .vision-content ul li {
+        font-size: 19px;
+    }
+}
+/* Media Query for MacBook Air and Larger Screens (up to 1200px) */
+@media (max-width: 1280px) {
+    .about-section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .about-section-text {
+        padding-left: 15px;
+        font-size: 1.3rem;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .about-section-image {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .about-section-image img {
+        width: 100%;
+        height: auto;
+        object-fit: cover; 
+    }
+    .about-description {
+        width: 80%;
+        font-size: 20px;
+        margin: 30px auto;
+    }
+
+    .container-aboutt {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .item-about {
+        width: 100px;
+        height: 100px;
+        margin: 15px 0;
+        font-size: 14px;
+    }
+
+    .vision-section {
+        flex-direction: column;
+        height: auto;
+        border: 1px solid #000;
+    }
+
+    .vision-image {
+        width: 100%;
+        border: none;
+    }
+
+    .vision-content {
+        width: 80%;
+        padding: 15px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .vision-content h2 {
+        font-size: 30px;
+        margin-bottom: 18px;
+    }
+
+    .vision-content h3 {
+        font-size: 20px;
+        margin: 12px 0;
+    }
+
+    .vision-content ul {
+        padding-left: 18px;
+    }
+
+    .vision-content ul li {
+        font-size: 19px;
+    }
+}
+
+/* Media Query for Screens in Portrait Orientation (800x1200) */
+@media (max-width: 800px) and (orientation: portrait) {
+    .about-section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .about-section-text {
+        padding-left: 10px;
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .about-section-image {
+        justify-content: center;
+        width: 100%;
+    }
+    .about-section-image img {
+        width: 100%;
+        height: auto;
+        object-fit: cover; 
+    }
+    .about-description {
+        width: 90%;
+        font-size: 18px;
+        margin: 20px auto;
+    }
+
+    .container-aboutt {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .item-about {
+        width: 90px;
+        height: 90px;
+        margin: 10px 0;
+        font-size: 13px;
+    }
+
+    .vision-section {
+        flex-direction: column;
+        height: auto;
+        border: 1px solid #000000;
+    }
+
+    .vision-image {
+        width: 100%;
+        border: 2px solid #000000;
+    }
+
+    .vision-content {
+        width: 95%;
+        padding: 10px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .vision-content h2 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .vision-content h3 {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .vision-content ul {
+        padding-left: 15px;
+    }
+
+    .vision-content ul li {
+        font-size: 19px;
+    }
+}
+

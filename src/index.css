@@ -57,7 +57,6 @@ code {
   gap: 2rem;
   display: flex;
   z-index: 1;
-  text-align: center;
   justify-content: center;
 }
 
@@ -166,7 +165,7 @@ code {
 
 /* Navbar */
 .navopened {
-  background-color: #010606 !important;
+  background-color: #ffffff !important;
 }
 
 .navopened .logo {
@@ -178,7 +177,7 @@ code {
 }
 
 .navopened .burger {
-  background-color: #010606 !important;
+  background-color: #ffffff !important;
 }
 
 .navbar {
@@ -186,8 +185,8 @@ code {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 0.5rem;
-  background-color: transparent;
+  padding: 1.1rem;
+  background-color: #ffffff;
   z-index: 2;
   backdrop-filter: blur(2px);
 }
@@ -203,12 +202,14 @@ code {
   margin: 0;
   font-size: 28px;
   padding-top: 10px;
+  max-width: 100%; 
+  height: auto; 
 }
 
 .navbar ul {
   transition: all 0.2s;
 
-  margin-left: 17rem;
+  margin-left: 10rem;
   list-style: none;
 }
 
@@ -324,7 +325,7 @@ main {
   margin-top: 2.5px;
 
   font-size: 18px;
-  color: #919191;
+  color: #000000;
 }
 
 footer {
@@ -332,7 +333,7 @@ footer {
   height: auto;
   margin: 0;
   padding: 1rem 0;
-  background-color: #010606;
+  background-color: #dad8d8;
 }
 
 .side1 {
@@ -353,7 +354,7 @@ footer .logo {
   margin-bottom: 0;
   align-items: center;
   align-content: center;
-  color: rgb(243, 243, 243);
+  color: #0b6d18;
   letter-spacing: 2px;
   font-weight: 400;
 
@@ -367,8 +368,8 @@ footer .logo {
 }
 
 .footer-title {
-  color: #fafafa;
-  font-weight: 600;
+  color: #0c6903;
+  font-weight: bold;
   font-size: 22px;
   margin-bottom: 0;
   word-wrap: initial;
@@ -383,9 +384,8 @@ footer ul {
 
 footer ul li a {
   text-decoration: none;
-  color: #919191;
+  color: black;
   font-size: 18px;
-  font-weight: 500;
 }
 
 .gotop {
@@ -666,7 +666,7 @@ ul li a {
   }
 
   .burger {
-    background-color: #fafafa;
+    background-color: #0b6d18;
   }
 
   .navbar {

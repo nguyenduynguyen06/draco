@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowUpRightDots, faChartLineUp } from '@fortawesome/free-solid-svg-icons'
+import { faArrowTrendUp, faArrowUpRightDots, faBrain, faBuilding, faUsers } from '@fortawesome/free-solid-svg-icons'
 function About() {
   return (
     <>
@@ -32,8 +32,7 @@ function About() {
           <div className="images-banner">
             <div className="image-item">
               <div>
-                <FontAwesomeIcon
-                  icon={faArrowUpRightDots}
+                <FontAwesomeIcon icon={faArrowTrendUp}
                   style={{ fontSize: '30px', color: '#333' }} // Apply specific size and color
                 />
               </div>
@@ -42,15 +41,25 @@ function About() {
                 Providing consulting and financial services to  optimize growth potential for companies  within the ecosystem
               </div>
             </div>
+            
             <div className="image-item">
-
+            <div>
+                <FontAwesomeIcon icon={faBuilding} 
+                  style={{ fontSize: '30px', color: '#333' }} // Apply specific size and color
+                />
+                  </div>
               <div style={{ fontWeight: "bold", fontSize: '20px', lineHeight: '41px' }}>Building Networks</div>
               <div className="tesst2" style={{ fontSize: '18px' }}>
                 Establishing strong relationships among companies to  encourage collaboration and resource sharing
               </div>
             </div>
             <div className="image-item">
-
+            <div>
+                <FontAwesomeIcon
+                  icon={faArrowUpRightDots} 
+                  style={{ fontSize: '30px', color: '#333' }} // Apply specific size and color
+                />
+                  </div>
               <div style={{ fontWeight: "bold", fontSize: '20px', lineHeight: '41px' }}>Sustainable Development</div>
               <div className="tesst3" style={{ fontSize: '18px' }}>
                 Investing in projects and companies with social significance  ensuring that economic development goes hand in hand  with environmental protection.
@@ -59,7 +68,11 @@ function About() {
           </div>
           <div className="images-banner">
             <div className="image-item">
-
+            <div>
+                <FontAwesomeIcon icon={faBrain} 
+                  style={{ fontSize: '30px', color: '#333' }} // Apply specific size and color
+                />
+                  </div>
               <div style={{ fontWeight: "bold", fontSize: '20px', lineHeight: '41px' }}>Enhancing Capabilities</div>
               <div className="tesst4" style={{ fontSize: '18px' }}>
                 Offering training and technical support to help
@@ -67,7 +80,11 @@ function About() {
               </div>
             </div>
             <div className="image-item">
-
+            <div>
+                <FontAwesomeIcon icon={faUsers} 
+                  style={{ fontSize: '30px', color: '#333' }} // Apply specific size and color
+                />
+                  </div>
               <div style={{ fontWeight: "bold", fontSize: '20px', lineHeight: '41px' }}>Creating Partner Value</div>
               <div className="tesst5" style={{ fontSize: '18px' }}>
                 Ensuring that all stakeholders benefit from our
