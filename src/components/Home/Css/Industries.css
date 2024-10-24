@@ -1,0 +1,131 @@
+.industries {
+    display: flex;
+    justify-content: center; 
+    align-items: stretch;
+    position: relative;
+    background-color: rgba(29, 29, 29, 0.7); 
+    background-image: url('https://static.wixstatic.com/media/9240f9_7e7b757b6bb54162a23399bf001cfc1e~mv2.jpg/v1/fill/w_1903,h_508,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/9240f9_7e7b757b6bb54162a23399bf001cfc1e~mv2.jpg'); /* Blurred background image */
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+
+.industries-content, .industries-grid {
+    position: relative;
+    z-index: 1;
+}
+
+.industries-content {
+    max-width: 20%;
+    text-align: center;
+    padding: 40px 30px;
+    background-color: rgb(57, 71, 117);
+    display: flex;
+    flex-direction: column; 
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.industries-content h1 {
+    font-size: 2.5rem;
+}
+
+.industries-content p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.industries-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    max-width: 35%;
+    padding: 7rem 2rem;
+}
+
+.industry-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.industry-card:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Hover effect */
+}
+
+.industry-card h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: white;
+}
+
+/* Media Query for screens with width 1280px */
+@media (max-width: 1280px) {
+    .industries-content {
+        max-width: 30%; /* Giảm kích thước của phần nội dung để phù hợp với màn hình */
+       
+    }
+
+    .industries-content h1 {
+        font-size: 2rem; /* Giảm kích thước tiêu đề */
+    }
+
+    .industries-content p {
+        font-size: 1rem;
+    }
+
+    .industries-grid {
+        grid-template-columns: repeat(2, 1fr); /* Giữ nguyên dạng 2 cột */
+        max-width: 60%;
+        padding: 7rem 2rem;
+    }
+
+    .industry-card {
+        height: 90px; /* Giảm chiều cao của card */
+    }
+}
+
+/* Media Query for screens with width 799px (portrait orientation) */
+@media (max-width: 799px) {
+    .industries {
+        flex-direction: column; /* Chuyển thành dạng cột cho màn hình nhỏ */
+      
+    }
+
+    .industries-content {
+        max-width: 100%; /* Chiếm toàn bộ chiều rộng */
+        padding: 20px;
+      
+    }
+
+    .industries-content h1 {
+        font-size: 1.8rem; /* Giảm kích thước tiêu đề */
+    }
+
+    .industries-content p {
+        font-size: 1rem; /* Giảm kích thước đoạn văn */
+    }
+
+    .industries-grid {
+        grid-template-columns: repeat(1, 1fr); /* Hiển thị 1 cột cho màn hình nhỏ */
+        max-width: 100%; /* Đảm bảo lưới chiếm toàn bộ chiều rộng */
+        padding: 2rem 1rem;
+    }
+
+    .industry-card {
+        height: 80px; /* Giảm chiều cao của card cho màn hình nhỏ */
+        font-size: 1rem; /* Giảm kích thước font của card */
+    }
+}

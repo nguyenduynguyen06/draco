@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 .about-section {
-    margin-top: 115px;
+    margin-top: 102px;
     display: flex;
     background-color: #002855;
     height: 400px;
@@ -148,99 +148,24 @@
     margin-bottom: 15px;
 }
 
-@media (max-width: 768px) {
-    .about-section {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .about-section-text {
-        padding-left: 10px;
-        font-size: 1.2rem;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .about-section-image {
-        justify-content: center;
-        width: 100%;
-    }
-    .about-section-image img {
-        width: 100%;
-        height: auto;
-        object-fit: cover; 
-    }
-    .about-description {
-        width: 90%;
-        font-size: 18px;
-        margin: 20px auto;
-    }
-
-    .container-aboutt {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .item-about {
-        width: 100px;
-        height: 100px;
-        margin: 10px 0;
-        font-size: 14px;
-    }
-
-    .vision-section {
-        flex-direction: column;
-        height: auto;
-        border: 1px solid #000000;
-    }
-
-    .vision-image {
-        width: 100%;
-        border: 2px solid #000000;
-    }
-
-    .vision-content {
-        width: 90%;
-        padding: 10px;
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    .vision-content h2 {
-        font-size: 30px;
-        margin-bottom: 15px;
-    }
-
-    .vision-content h3 {
-        font-size: 20px;
-        margin: 10px 0;
-    }
-
-    .vision-content ul {
-        padding-left: 15px;
-    }
-
-    .vision-content ul li {
-        font-size: 19px;
-    }
-}
 /* Media Query for MacBook Air and Larger Screens (up to 1200px) */
 @media (max-width: 1280px) {
     .about-section {
-        flex-direction: column;
+        flex-direction: row; /* Đổi thành hàng ngang */
         height: auto;
     }
 
     .about-section-text {
         padding-left: 15px;
         font-size: 1.3rem;
-        text-align: center;
+        text-align: left; /* Giữ văn bản canh trái */
         padding: 20px;
+        flex: 1; /* Giúp chia đều không gian giữa các phần */
     }
 
     .about-section-image {
         justify-content: center;
-        width: 100%;
+        width: 50%; /* Chiếm 50% màn hình để giữ cân đối */
     }
 
     .about-section-image img {
@@ -248,6 +173,7 @@
         height: auto;
         object-fit: cover; 
     }
+
     .about-description {
         width: 80%;
         font-size: 20px;
@@ -255,32 +181,34 @@
     }
 
     .container-aboutt {
-        flex-direction: column;
+        flex-direction: row; /* Đổi thành hàng ngang */
+        justify-content: center; /* Canh giữa */
         padding: 15px;
     }
 
     .item-about {
-        width: 100px;
-        height: 100px;
-        margin: 15px 0;
+        width: 120px;
+        height: 120px;
+        margin: 15px;
         font-size: 14px;
+        border-radius: 50%;
     }
 
     .vision-section {
-        flex-direction: column;
+        flex-direction: row; /* Đổi thành hàng ngang */
         height: auto;
         border: 1px solid #000;
     }
 
     .vision-image {
-        width: 100%;
+        width: 50%; /* Giữ 50% để hình ảnh nằm ngang với nội dung */
         border: none;
     }
 
     .vision-content {
-        width: 80%;
+        width: 50%; /* Nội dung chiếm 50% không gian */
         padding: 15px;
-        text-align: center;
+        text-align: left;
         margin: 0 auto;
     }
 
@@ -342,6 +270,8 @@
         height: 90px;
         margin: 10px 0;
         font-size: 13px;
+        width: 197px;
+        border-radius: 29px;
     }
 
     .vision-section {
