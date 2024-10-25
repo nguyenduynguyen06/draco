@@ -15,7 +15,7 @@ const Industries = () => {
           <h2>Energy</h2>
         </div>
         <div className="industry-card">
-          <h2>Medical</h2>
+          <h2>Legal</h2>
         </div>
       </div>
       <div style={{padding:'0px 20px'}}></div>

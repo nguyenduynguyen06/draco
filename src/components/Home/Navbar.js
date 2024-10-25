@@ -51,7 +51,7 @@ const NavbarHome = () => {
       </Menu.Item>
       <Menu.Item key="4">
         <NavLink to="#" onClick={() => window.scrollTo(0, 0)}>
-          Medical
+          Legal
         </NavLink>
       </Menu.Item>
     </Menu>
@@ -109,7 +109,10 @@ const NavbarHome = () => {
         placement="right"
         onClose={closeDrawer}
         visible={isDrawerVisible}
-        style={{ backgroundColor: "transparent" }}
+        style={{
+          backgroundColor: "transparent", 
+          backdropFilter: "blur(5px)"
+        }}        
         closeIcon={
           <CloseOutlined
             style={{ fontSize: '28px', color: 'red', position: 'absolute', right: '20px', top: '30px' }}
@@ -119,7 +122,7 @@ const NavbarHome = () => {
         <ul className="mobile-nav-links">
           <li><NavLink to="/" onClick={() => { window.scrollTo(0, 0); closeDrawer(); }}>Home</NavLink></li>
           <li onClick={toggleIndustries} style={{ cursor: 'pointer' }}>
-            <span style={{ textDecoration: "none", fontSize: "24px", color: "red", fontWeight: "bold" }}>Industries {isIndustriesExpanded ? '-' : '+'}</span>
+            <span className='custom-texttt'>Industries {isIndustriesExpanded ? '-' : '+'}</span>
           </li>
           {isIndustriesExpanded && (
             <ul className="submenu">
@@ -133,7 +136,7 @@ const NavbarHome = () => {
                 <NavLink to="#" onClick={() => { window.scrollTo(0, 0); closeDrawer(); }}>Energy</NavLink>
               </li>
               <li>
-                <NavLink to="#" onClick={() => { window.scrollTo(0, 0); closeDrawer(); }}>Medical</NavLink>
+                <NavLink to="#" onClick={() => { window.scrollTo(0, 0); closeDrawer(); }}>Legal</NavLink>
               </li>
             </ul>
           )}

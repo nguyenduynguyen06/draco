@@ -78,7 +78,7 @@ html {
     .hamburger-icon {
         display: block;
         font-size: 30px;
-        color: red;
+        color: rgb(255, 0, 0);
         cursor: pointer;
         position: absolute;
         right: 20px;
@@ -123,12 +123,12 @@ html {
     .ant-drawer-title {
         font-size: 24px;
         font-weight: bold;
-        color: red;
+        color: rgb(0, 0, 0);
     }
 
     .ant-drawer-close {
         font-size: 20px;
-        color: red;
+        color: rgb(0, 0, 0);
     }
 }
 
@@ -185,3 +185,15 @@ html {
         font-size: 16px;
     }
 }
+.custom-texttt {
+    text-decoration: none;
+    font-size: 24px;
+    color: red;
+    font-weight: bold;
+  }
+  
+  .custom-texttt:hover {
+    color: rgb(0, 0, 0); 
+    cursor: pointer; 
+  }
+  

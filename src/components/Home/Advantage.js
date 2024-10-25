@@ -18,35 +18,35 @@ const Advantage = () => {
             {/* Phần này chứa các hình ảnh khác mà bạn đã thêm */}
             <div className="advantage-cards">
                 <div className="card-advantage">
-                    <img src="./hinh1.jpg" alt="Image 1" />
+                    <img src="/Experiance.png" alt="Image 1" />
                     <div className="card-advantage-content">
                         <strong>Experience</strong>
                         <div>Over 30 years of technology innovation and growth</div>
                     </div>
                 </div>
                 <div className="card-advantage">
-                    <img src="https://via.placeholder.com/200" alt="Image 2" />
+                    <img src="/Industries.png" alt="Image 2" />
                     <div className="card-advantage-content">
                         <strong>Industries</strong>
                         <div>We have solutions and experience in every major industrial sector</div>
                     </div>
                 </div>
                 <div className="card-advantage">
-                    <img src="https://via.placeholder.com/200" alt="Image 3" />
+                    <img src="/Technologiess.png" alt="Image 3" />
                     <div className="card-advantage-content">
                         <strong>Technologies</strong>
                         <div>From motion control to precision manufacturing, system integration and machine intelligence</div>
                     </div>
                 </div>
                 <div className="card-advantage">
-                    <img src="https://via.placeholder.com/200" alt="Image 4" />
+                    <img src="/Local.png" alt="Image 4" />
                     <div className="card-advantage-content">
                         <strong>Local</strong>
                         <div>Over 80 locations throughout Asia and a proven ability to deliver on-location</div>
                     </div>
                 </div>
                 <div className="card-advantage">
-                    <img src="https://via.placeholder.com/200" alt="Image 5" />
+                    <img src="Result.png" alt="Image 5" />
                     <div className="card-advantage-content">
                         <strong>Results</strong>
                         <div>Delivered advanced solutions to over 10,000 customers in over 30 years of our history</div>
