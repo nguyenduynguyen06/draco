@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Css/Advantage.css';
+import { useTranslation } from 'react-i18next';
 
 const Advantage = () => {
+    const { t, i18n } = useTranslation();
+
+    useEffect(() => {
+        const savedLanguage = localStorage.getItem('language');
+        if (savedLanguage) {
+            const parsedLanguage = JSON.parse(savedLanguage);
+            i18n.changeLanguage(parsedLanguage.name === 'English' ? 'en' : 'vi');
+        }
+    }, [i18n]);
     const scrollToBottom = () => {
         window.scrollTo({
             top: document.documentElement.scrollHeight,
@@ -12,7 +22,7 @@ const Advantage = () => {
         <section className="isdn-advantage">
             {/* Section hình ảnh với tiêu đề */}
             <div className="advantage-image">
-                <h1 className="advantage-title">The Draco advantage</h1>
+                <h1 className="advantage-title">{t('advantageSection.title')}</h1>
             </div>
 
             {/* Phần này chứa các hình ảnh khác mà bạn đã thêm */}
@@ -20,46 +30,46 @@ const Advantage = () => {
                 <div className="card-advantage">
                     <img src="/Experiance.png" alt="Image 1" />
                     <div className="card-advantage-content">
-                        <strong>Experience</strong>
-                        <div>Over 30 years of technology innovation and growth</div>
+                        <strong>{t('advantageSection.cards.experience.title')}</strong>
+                        <div>{t('advantageSection.cards.experience.description')}</div>
                     </div>
                 </div>
                 <div className="card-advantage">
                     <img src="/Industries.png" alt="Image 2" />
                     <div className="card-advantage-content">
-                        <strong>Industries</strong>
-                        <div>We have solutions and experience in every major industrial sector</div>
+                        <strong>{t('advantageSection.cards.industries.title')}</strong>
+                        <div>{t('advantageSection.cards.industries.description')}</div>
                     </div>
                 </div>
                 <div className="card-advantage">
                     <img src="/Technologiess.png" alt="Image 3" />
                     <div className="card-advantage-content">
-                        <strong>Technologies</strong>
-                        <div>From motion control to precision manufacturing, system integration and machine intelligence</div>
+                        <strong>{t('advantageSection.cards.technologies.title')}</strong>
+                        <div>{t('advantageSection.cards.technologies.description')}</div>
                     </div>
                 </div>
                 <div className="card-advantage">
                     <img src="/Local.png" alt="Image 4" />
                     <div className="card-advantage-content">
-                        <strong>Local</strong>
-                        <div>Over 80 locations throughout Asia and a proven ability to deliver on-location</div>
+                        <strong>{t('advantageSection.cards.local.title')}</strong>
+                        <div>{t('advantageSection.cards.local.description')}</div>
                     </div>
                 </div>
                 <div className="card-advantage">
                     <img src="Result.png" alt="Image 5" />
                     <div className="card-advantage-content">
-                        <strong>Results</strong>
-                        <div>Delivered advanced solutions to over 10,000 customers in over 30 years of our history</div>
+                        <strong>{t('advantageSection.cards.results.title')}</strong>
+                        <div>{t('advantageSection.cards.results.description')}</div>
                     </div>
                 </div>
             </div>
-            <div style={{marginBottom:"50px"}}>
-                <div style={{fontSize:"20px"}}>
-                    Our customers choose us because of our complete approach to delivering results.<br />
-                    We know it takes more than just great engineering to deliver automation results.<br />
-                    We bring industry knowledge, local service, and results-focus to our solutions.
+            <div style={{ marginBottom: "50px" }}>
+                <div>
+                    {t('advantageSection.description').split('\n').map((line, index) => (
+                        <p style={{ fontSize: "20px",color:'black' }}key={index}>{line}</p>
+                    ))}
                 </div>
-                <button className="grow-button" onClick={scrollToBottom}>Contact us to explore a solutions </button>
+                <button className="grow-button" onClick={scrollToBottom}>{t('advantageSection.buttonText')}</button>
             </div>
         </section>
     );

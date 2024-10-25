@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Css/Content.css';
+import { useTranslation } from 'react-i18next';
 
 const Content = () => {
+  const { t, i18n } = useTranslation();
 
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem('language');
+    if (savedLanguage) {
+      const parsedLanguage = JSON.parse(savedLanguage);
+      i18n.changeLanguage(parsedLanguage.name === 'English' ? 'en' : 'vi');
+    }
+  }, [i18n]);
   const scrollToBottom = () => {
     window.scrollTo({
       top: document.documentElement.scrollHeight,
@@ -13,19 +22,13 @@ const Content = () => {
   return (
     <div className="business-automation-container">
       <div className="business-content">
-        <h2 className="main-title">We've helped over 10,000 businesses build advanced industrial automation</h2>
-        <p className="description">
-          Draco delivers solutions that power Asia's industrial future.<br />
-          Today, our components and systems power semiconductor factories, advanced medical devices,
-          clean energy plants, electric vehicles and more across Asia.
-        </p>
-        <p className="description">
-          Our customers count on us to deliver when it matters: Mission-critical, on-location, and with disruptive capability.
-        </p>
-        <p className="description">
-          Learn how 10,000+ businesses throughout Asia have trusted Draco to deliver advanced automation.
-        </p>
-        <button className="grow-button" onClick={scrollToBottom}>Grow your capabilities with us</button>
+        <h2 className="main-title">{t('businessAutomation.mainTitle')}</h2>
+        <p className="description">{t('businessAutomation.description1')}</p>
+        <p className="description">{t('businessAutomation.description2')}</p>
+        <p className="description">{t('businessAutomation.description3')}</p>
+        <button className="grow-button" onClick={scrollToBottom}>
+          {t('businessAutomation.buttonText')}
+        </button>
       </div>
     </div>
   );

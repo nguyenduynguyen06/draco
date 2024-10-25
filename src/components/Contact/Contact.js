@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   EnvironmentOutlined,
   PhoneOutlined,
@@ -10,6 +10,7 @@ import Header from "../Home/Header";
 import Navbar from "../Home/Navbar";
 import Footer from "../Home/Footer";
 import { Helmet } from "react-helmet";
+import { useTranslation } from "react-i18next";
 
 
 const Contact = () => {
@@ -26,11 +27,19 @@ const Contact = () => {
   const handleCancel = () => {
     setIsModalVisible(false);
   };
+  const { t, i18n } = useTranslation();
 
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem('language');
+    if (savedLanguage) {
+      const parsedLanguage = JSON.parse(savedLanguage);
+      i18n.changeLanguage(parsedLanguage.name === 'English' ? 'en' : 'vi');
+    }
+  }, [i18n]);
   return (
     <div>
       <Helmet>
-        <title>Contact | Draco Holding</title>
+        <title>{t('contactPage.pageTitle')}</title>
       </Helmet>
       <Navbar />
       <div className="contact-us-container">
@@ -38,33 +47,33 @@ const Contact = () => {
           className="contact-us-header"
           style={{ backgroundImage: `url(./contactUs.png)` }}
         >
-          <h2>FOR NEW WORKING EXPERIENCE</h2>
-          <span className="hihi">CONTACT US</span>
+          <h2>{t('contactPage.headerTitle')}</h2>
+          <span className="hihi">{t('contactPage.contactUs')}</span>
         </div>
         <div className="contact-us-cards">
           <div className="contact-card">
             <EnvironmentOutlined className="icon-style" />
-            <h3>Address</h3>
+            <h3>{t('contactPage.cards.address.title')}</h3>
             <p>
-              135 Phuoc Thien St, <br />
-              Long Thanh My Ward,  District 9 <br />
-              Thu Duc City
+              {t('contactPage.cards.address.line1')} <br />
+              {t('contactPage.cards.address.line2')} <br />
+              {t('contactPage.cards.address.line3')}
             </p>
           </div>
           <div className="contact-card">
             <PhoneOutlined className="icon-style" />
-            <h3>Phone</h3>
-            <p>(+84) 907 303 646</p>
+            <h3>{t('contactPage.cards.phone.title')}</h3>
+            <p>{t('contactPage.cards.phone.number')}</p>
           </div>
           <div className="contact-card">
             <MailOutlined className="icon-style" />
-            <h3>Mail</h3>
-            <p>Info@dracoholding.com.vn</p>
+            <h3>{t('contactPage.cards.mail.title')}</h3>
+            <p>{t('contactPage.cards.mail.email')}</p>
           </div>
         </div>
 
         <Modal
-          title="Our Location"
+          title={t('contactPage.modalTitle')}
           visible={isModalVisible}
           onOk={handleOk}
           onCancel={handleCancel}

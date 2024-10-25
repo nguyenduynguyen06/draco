@@ -1,0 +1,159 @@
+{
+  "navbar": {
+    "home": "Trang chủ",
+    "industries": "Ngành công nghiệp",
+    "investorRelations": "Quan hệ nhà đầu tư",
+    "about": "Giới thiệu",
+    "contact": "Liên hệ"
+  },
+  "drawerMenu": {
+    "education": "Giáo dục",
+    "informationTechnology": "Công nghệ thông tin",
+    "energy": "Năng lượng",
+    "legal": "Pháp lý",
+    "investorRelations": "Quan hệ nhà đầu tư",
+    "about": "Giới thiệu",
+    "contact": "Liên hệ"
+  },
+  "drawerTitle": "Menu",
+  "industriesExpanded": {
+    "expand": "+",
+    "collapse": "-"
+  },
+  "aboutPage": {
+    "title": "Giới thiệu về Draco Holdings",
+    "description1": "Được thành lập vào năm 2024, Công ty Tư vấn Đầu tư Draco đã nhanh chóng khẳng định vị thế của mình trong lĩnh vực tư vấn đầu tư trong hệ sinh thái rộng lớn. Với quỹ đầu tư cung cấp và duy trì vốn cho các công ty, Draco không chỉ là một nhà tư vấn mà còn là một đối tác chiến lược, đồng hành cùng các doanh nghiệp trên hành trình phát triển.",
+    "description2": "Draco áp dụng một cách tiếp cận toàn diện, từ phân tích thị trường và đánh giá tiềm năng đầu tư đến cung cấp các giải pháp tài chính linh hoạt. Đội ngũ chuyên gia giàu kinh nghiệm của Draco luôn sẵn sàng lắng nghe và đưa ra các lời khuyên phù hợp với nhu cầu cụ thể của từng khách hàng.",
+    "description3": "Câu chuyện của Draco không chỉ là hành trình của một công ty tư vấn đầu tư, mà còn là câu chuyện về những giấc mơ, khát vọng phát triển và mong muốn tạo ra giá trị cho cộng đồng. Với định hướng rõ ràng và đội ngũ chuyên nghiệp, Draco tin rằng sẽ tiếp tục đồng hành cùng các doanh nghiệp trên con đường phát triển và thành công trong tương lai.",
+    "globalNetwork": "Mạng lưới toàn cầu của chúng tôi",
+    "boardOfDirectors": "Hội đồng quản trị của chúng tôi",
+    "boardCommittees": "Ủy ban Hội đồng quản trị",
+    "corporateInformation": "Thông tin công ty",
+    "corporateGovernance": "Quản trị & Phát triển bền vững",
+    "visionTitle": "Tầm nhìn của chúng tôi",
+    "visionDescription": "Draco đặt mục tiêu trở thành trung tâm tư vấn đầu tư hàng đầu tại Việt Nam, hướng dẫn sự phát triển bền vững cho các công ty trong hệ sinh thái của chúng tôi thông qua các quỹ đầu tư chiến lược, nhằm tối ưu hóa tiềm năng tăng trưởng và nâng cao khả năng cạnh tranh trong nhiều năm tới.",
+    "visionPoints": {
+      "leadingInvestor": "Trở thành Nhà Đầu tư Hàng đầu:",
+      "capitalSupport": "Cung cấp Vốn, Kiến thức và Hỗ trợ:",
+      "sustainableDevelopment": "Phát triển Bền vững và Thành công Dài hạn:",
+      "leadingInvestorDescription": "Draco đặt mục tiêu trở thành một nhà đầu tư có uy tín và tầm ảnh hưởng trong hệ sinh thái của mình.",
+      "capitalSupportDescription": "Ngoài vốn đầu tư, công ty sẽ cung cấp kiến thức sâu rộng về quản lý, chiến lược, công nghệ, v.v., cùng với những hỗ trợ cần thiết khác cho các công ty trong hệ sinh thái.",
+      "sustainableDevelopmentDescription": "Mục tiêu cuối cùng là giúp các công ty trong hệ sinh thái đạt được sự phát triển bền vững trong nhiều năm, không chỉ tập trung vào lợi nhuận ngắn hạn."
+    },
+    "visionDescription2": "Tầm nhìn này phản ánh rõ ràng mục tiêu trở thành nhà đầu tư hàng đầu, không chỉ cung cấp vốn mà còn cả kiến thức và sự hỗ trợ để các công ty trong hệ sinh thái phát triển bền vững trong dài hạn. Điều này sẽ tạo ra sức mạnh và giá trị cốt lõi cho cả Draco và các công ty trong hệ sinh thái.",
+    "missionTitle": "Sứ mệnh của chúng tôi",
+    "missionDescription": "Chúng tôi cam kết cung cấp các giải pháp tư vấn đầu tư chiến lược hỗ trợ sự phát triển bền vững của các công ty trong hệ sinh thái của chúng tôi và nâng cao năng lực cạnh tranh của họ. Bằng cách kết nối vốn, kiến thức và mạng lưới hợp tác, chúng tôi mong muốn tạo điều kiện cho doanh nghiệp phát triển bền vững và tạo ra giá trị lâu dài cho nhà đầu tư và cộng đồng.",
+    "missionPoints": {
+      "supportingGrowth": "Hỗ trợ Phát triển:",
+      "buildingNetworks": "Xây dựng Mạng lưới:",
+      "sustainableDevelopment": "Phát triển Bền vững:",
+      "enhancingCapabilities": "Nâng cao Năng lực:",
+      "creatingPartnerValue": "Tạo Giá trị Đối tác:",
+      "supportingGrowthDescription": "Cung cấp các dịch vụ tư vấn và tài chính để tối ưu hóa tiềm năng phát triển cho các công ty trong hệ sinh thái.",
+      "buildingNetworksDescription": "Thiết lập các mối quan hệ mạnh mẽ giữa các công ty để khuyến khích sự hợp tác và chia sẻ tài nguyên.",
+      "sustainableDevelopmentDescription": "Đầu tư vào các dự án và công ty có ý nghĩa xã hội, đảm bảo rằng phát triển kinh tế đi đôi với bảo vệ môi trường.",
+      "enhancingCapabilitiesDescription": "Cung cấp đào tạo và hỗ trợ kỹ thuật để giúp các công ty cải thiện kỹ năng quản lý và vận hành.",
+      "creatingPartnerValueDescription": "Đảm bảo rằng tất cả các bên liên quan đều được hưởng lợi từ các hoạt động đầu tư của chúng tôi."
+    }
+  },
+  "HearderHome": {
+    "HeaderTitle": "HELPING TO NEW HEIGHT",
+    "Title": "Trang chủ | Draco Holding"
+  },
+  "businessAutomation": {
+    "mainTitle": "Chúng tôi đã giúp hơn 10,000 doanh nghiệp xây dựng tự động hóa công nghiệp tiên tiến",
+    "description1": "Draco cung cấp các giải pháp thúc đẩy tương lai công nghiệp của Châu Á.\nHiện nay, các thành phần và hệ thống của chúng tôi đang cung cấp năng lượng cho các nhà máy bán dẫn, thiết bị y tế tiên tiến, nhà máy năng lượng sạch, xe điện và nhiều hơn nữa khắp Châu Á.",
+    "description2": "Khách hàng của chúng tôi tin tưởng vào khả năng cung cấp đúng lúc, tại chỗ và với năng lực đổi mới của chúng tôi.",
+    "description3": "Tìm hiểu cách hơn 10,000 doanh nghiệp trên toàn Châu Á đã tin tưởng Draco để cung cấp tự động hóa tiên tiến.",
+    "buttonText": "Phát triển năng lực của bạn cùng chúng tôi"
+  },
+  "advantageSection": {
+    "title": "Lợi thế của Draco",
+    "cards": {
+      "experience": {
+        "title": "Kinh nghiệm",
+        "description": "Hơn 30 năm đổi mới và phát triển công nghệ"
+      },
+      "industries": {
+        "title": "Ngành công nghiệp",
+        "description": "Chúng tôi có giải pháp và kinh nghiệm trong mọi lĩnh vực công nghiệp lớn"
+      },
+      "technologies": {
+        "title": "Công nghệ",
+        "description": "Từ điều khiển chuyển động đến sản xuất chính xác, tích hợp hệ thống và trí tuệ máy móc"
+      },
+      "local": {
+        "title": "Địa phương",
+        "description": "Hơn 80 địa điểm trên khắp Châu Á và khả năng cung cấp tận nơi đã được chứng minh"
+      },
+      "results": {
+        "title": "Kết quả",
+        "description": "Cung cấp giải pháp tiên tiến cho hơn 10.000 khách hàng trong hơn 30 năm lịch sử của chúng tôi"
+      }
+    },
+    "description": "Khách hàng chọn chúng tôi vì cách tiếp cận toàn diện để mang lại kết quả.\nChúng tôi biết rằng cần hơn cả kỹ thuật tuyệt vời để mang lại kết quả tự động hóa.\nChúng tôi mang kiến thức ngành, dịch vụ địa phương và sự tập trung vào kết quả vào các giải pháp của chúng tôi.",
+    "buttonText": "Liên hệ với chúng tôi để khám phá một giải pháp"
+  },
+  "industriesSection": {
+    "title": "Ngành công nghiệp",
+    "cards": {
+      "education": "Giáo dục",
+      "informationTechnology": "Công nghệ thông tin",
+      "energy": "Năng lượng",
+      "legal": "Pháp lý"
+    },
+    "content": {
+      "mainTitle": "Ngành công nghiệp",
+      "description1": "Chúng tôi đã cung cấp các giải pháp tự động hóa cho tất cả các lĩnh vực công nghiệp chính.",
+      "description2": "Các nhóm ngành của chúng tôi cung cấp các giải pháp cụ thể phù hợp với ngành công nghiệp của khách hàng.",
+      "description3": "Khám phá cách Draco có thể giúp thay đổi sự hiện diện của ngành của bạn"
+    }
+  },
+  "nextStepSection": {
+    "title": "Bước tiếp theo cùng chúng tôi",
+    "options": {
+      "findSolution": {
+        "title": "Tìm giải pháp",
+        "description": "Khám phá cách Draco có thể nâng cao tự động hóa công nghiệp và phát triển doanh nghiệp của bạn",
+        "button": "Liên hệ với chúng tôi"
+      },
+      "forInvestors": {
+        "title": "Dành cho nhà đầu tư",
+        "description": "Truy cập trung tâm nhà đầu tư để đọc các báo cáo tài chính mới nhất và các thông báo.",
+        "button": "Trung tâm nhà đầu tư"
+      }
+    }
+  },
+  "contactPage": {
+    "pageTitle": "Liên hệ | Draco Holding",
+    "headerTitle": "CHO TRẢI NGHIỆM LÀM VIỆC MỚI",
+    "contactUs": "LIÊN HỆ VỚI CHÚNG TÔI",
+    "cards": {
+      "address": {
+        "title": "Địa chỉ",
+        "line1": "135 Đường Phước Thiện,",
+        "line2": "Phường Long Thạnh Mỹ, Quận 9",
+        "line3": "Thành phố Thủ Đức"
+      },
+      "phone": {
+        "title": "Điện thoại",
+        "number": "(+84) 907 303 646"
+      },
+      "mail": {
+        "title": "Thư điện tử",
+        "email": "Info@dracoholding.com.vn"
+      }
+    },
+    "modalTitle": "Vị trí của chúng tôi"
+  },
+  "footer": {
+    "logo": "DRACO",
+    "footerText": "HELPING TO NEW HEIGHT",
+    "addressTitle": "Địa chỉ",
+    "address": "135 Phước Thiện, Long Thạnh Mỹ, Quận 9, Thành phố Hồ Chí Minh, Việt Nam",
+    "contactTitle": "Liên hệ",
+    "email": "Email: info@dracoholding.com.vn",
+    "hotline": "Hotline: (+84) 907 303 646",
+    "goTop": "Lên đầu trang"
+  }
+}

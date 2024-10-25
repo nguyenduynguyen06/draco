@@ -1,0 +1,159 @@
+{
+    "navbar": {
+        "home": "Home",
+        "industries": "Industries",
+        "investorRelations": "Investor Relations",
+        "about": "About",
+        "contact": "Contact"
+    },
+    "drawerMenu": {
+        "education": "Education",
+        "informationTechnology": "Information Technology",
+        "energy": "Energy",
+        "legal": "Legal",
+        "investorRelations": "Investor Relations",
+        "about": "About",
+        "contact": "Contact"
+    },
+    "drawerTitle": "Menu",
+    "industriesExpanded": {
+        "expand": "+",
+        "collapse": "-"
+    },
+    "aboutPage": {
+        "title": "About Draco Holdings",
+        "description1": "Founded in 2024, Draco Investment Consulting Company has quickly established its position in the investment consulting field within the broader ecosystem. With an investment fund that provides and maintains capital for companies, Draco is not just a consultant but also a strategic partner, accompanying businesses on their development journey.",
+        "description2": "Draco adopts a comprehensive approach, from market analysis and investment potential assessment to providing flexible financial solutions. The experienced team of experts at Draco is always ready to listen and offer advice tailored to the specific needs of each client.",
+        "description3": "The story of Draco is not just the journey of an investment consulting company, but also a narrative of dreams, aspirations for growth, and a desire to create value for the community. With a clear direction and a professional team, Draco believes it will continue to accompany businesses on the path to development and success in the future.",
+        "globalNetwork": "Our global network",
+        "boardOfDirectors": "Our Board of Directors",
+        "boardCommittees": "Board Committees",
+        "corporateInformation": "Corporate Information",
+        "corporateGovernance": "Corporate Governance & Sustainability",
+        "visionTitle": "Our vision",
+        "visionDescription": "Draco aims to become the leading investment consulting center in Vietnam, guiding sustainable development for the companies within our ecosystem through strategic investment funds, in order to optimize growth potential and enhance competitive capacity for many years to come.",
+        "visionPoints": {
+            "leadingInvestor": "Become a Leading Investor:",
+            "capitalSupport": "Provide Capital, Knowledge, and Support:",
+            "sustainableDevelopment": "Sustainable Development and Long-term Success:",
+            "leadingInvestorDescription": "Draco aims to be a reputable and influential investor in its ecosystem.",
+            "capitalSupportDescription": "In addition to investment capital, the company will offer in-depth knowledge about management, strategy, technology, etc., as well as other necessary support to the companies in the ecosystem",
+            "sustainableDevelopmentDescription": "The ultimate goal is to help the companies in the ecosystem achieve sustainable growth and development over many years, not just short-term profits"
+        },
+        "visionDescription2": "This vision clearly reflects the goal of becoming a top investor, providing not only capital but also knowledge and support for the companies in the ecosystem to develop sustainably in the long term. This will create strength and core value for both Draco and the companies within its ecosystem",
+        "missionTitle": "Our Mission",
+        "missionDescription": "We are committed to providing strategic investment consulting solutions that support the sustainable development of companies within our ecosystem and enhance their competitive capabilities. By connecting capital, knowledge, and collaborative networks, we aim to empower businesses and create long-term value for investors and the community.",
+        "missionPoints": {
+            "supportingGrowth": "Supporting Growth:",
+            "buildingNetworks": "Building Networks:",
+            "sustainableDevelopment": "Sustainable Development:",
+            "enhancingCapabilities": "Enhancing Capabilities:",
+            "creatingPartnerValue": "Creating Partner Value:",
+            "supportingGrowthDescription": "Providing consulting and financial services to optimize growth potential for companies within the ecosystem.",
+            "buildingNetworksDescription": "Establishing strong relationships among companies to encourage collaboration and resource sharing.",
+            "sustainableDevelopmentDescription": "Investing in projects and companies with social significance, ensuring that economic development goes hand in hand with environmental protection.",
+            "enhancingCapabilitiesDescription": "Offering training and technical support to help companies improve their management and operational skills.",
+            "creatingPartnerValueDescription": "Ensuring that all stakeholders benefit from our investment activities."
+        }
+    },
+    "HearderHome": {
+        "HeaderTitle": "HEPLPING TO NEW HEIGHT",
+        "Title": "Home | Draco Holding"
+    },
+    "businessAutomation": {
+        "mainTitle": "We've helped over 10,000 businesses build advanced industrial automation",
+        "description1": "Draco delivers solutions that power Asia's industrial future.\nToday, our components and systems power semiconductor factories, advanced medical devices, clean energy plants, electric vehicles and more across Asia.",
+        "description2": "Our customers count on us to deliver when it matters: Mission-critical, on-location, and with disruptive capability.",
+        "description3": "Learn how 10,000+ businesses throughout Asia have trusted Draco to deliver advanced automation.",
+        "buttonText": "Grow your capabilities with us"
+    },
+    "advantageSection": {
+        "title": "The Draco advantage",
+        "cards": {
+            "experience": {
+                "title": "Experience",
+                "description": "Over 30 years of technology innovation and growth"
+            },
+            "industries": {
+                "title": "Industries",
+                "description": "We have solutions and experience in every major industrial sector"
+            },
+            "technologies": {
+                "title": "Technologies",
+                "description": "From motion control to precision manufacturing, system integration and machine intelligence"
+            },
+            "local": {
+                "title": "Local",
+                "description": "Over 80 locations throughout Asia and a proven ability to deliver on-location"
+            },
+            "results": {
+                "title": "Results",
+                "description": "Delivered advanced solutions to over 10,000 customers in over 30 years of our history"
+            }
+        },
+        "description": "Our customers choose us because of our complete approach to delivering results.\nWe know it takes more than just great engineering to deliver automation results.\nWe bring industry knowledge, local service, and results-focus to our solutions.",
+        "buttonText": "Contact us to explore a solution"
+    },
+    "industriesSection": {
+        "title": "Industries",
+        "cards": {
+            "education": "Education",
+            "informationTechnology": "Information Technology",
+            "energy": "Energy",
+            "legal": "Legal"
+        },
+        "content": {
+            "mainTitle": "Industries",
+            "description1": "We've delivered automation solutions across all major industry segments.",
+            "description2": "Our industry groups deliver specific solutions tailored for our customers' industries.",
+            "description3": "Explore how Draco can help transform your industry presence"
+        }
+    },
+    "nextStepSection": {
+        "title": "Take the next step with us",
+        "options": {
+            "findSolution": {
+                "title": "Find a Solution",
+                "description": "Discover how Draco can advance your industrial automation and grow your business",
+                "button": "Contact us"
+            },
+            "forInvestors": {
+                "title": "For Investors",
+                "description": "Visit our investor centre to read our latest financial reports and announcements.",
+                "button": "Investor centre"
+            }
+        }
+    },
+    "contactPage": {
+        "pageTitle": "Contact | Draco Holding",
+        "headerTitle": "FOR NEW WORKING EXPERIENCE",
+        "contactUs": "CONTACT US",
+        "cards": {
+            "address": {
+                "title": "Address",
+                "line1": "135 Phuoc Thien St,",
+                "line2": "Long Thanh My Ward, District 9",
+                "line3": "Thu Duc City"
+            },
+            "phone": {
+                "title": "Phone",
+                "number": "(+84) 907 303 646"
+            },
+            "mail": {
+                "title": "Mail",
+                "email": "Info@dracoholding.com.vn"
+            }
+        },
+        "modalTitle": "Our Location"
+    },
+    "footer": {
+        "logo": "DRACO",
+        "footerText": "HELPING TO NEW HEIGHT",
+        "addressTitle": "Address",
+        "address": "135 Phuoc Thien, Long Thanh My, District 9, Ho Chi Minh City, Vietnam",
+        "contactTitle": "Contact",
+        "email": "Email: info@dracoholding.com.vn",
+        "hotline": "Hotline: (+84) 907 303 646",
+        "goTop": "Go to Top"
+    }
+}

@@ -5,7 +5,7 @@
     align-items: center;
     background-color: white;
     position: relative;
-    gap: 200px;
+    gap: 100px;
     width: 100%;
     z-index: 10;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
@@ -21,7 +21,7 @@
     z-index: 1000;
 }
 
-.logo img {
+.logo-navbar img {
     height: 100px;
     width: 100px;
 }
@@ -70,7 +70,7 @@ html {
     display: none;
 }
 
-@media (max-width: 799px) {
+@media (max-width: 767px) {
     .nav-links {
         display: none;
     }
@@ -85,16 +85,16 @@ html {
     }
 
     .navbar-home {
-        justify-content: space-between;
+        justify-content: left;
         gap: 20px;
     }
 
-    .logo {
+    .logo-navbar {
         margin-left: 30px;
         /* You can adjust this value to shift it more */
     }
 
- 
+
     .mobile-nav-links {
         list-style: none;
         justify-content: right;
@@ -154,16 +154,15 @@ html {
     color: black;
 }
 
-@media (max-width: 1280px) {
-
-    .logo img {
+@media (min-width: 768px) and (max-width: 1024px) {
+    .logo-navbar img {
         height: 80px;
         width: 80px;
     }
 
 
     .navbar-home {
-        gap: 100px;
+        gap: 20px;
     }
 
 
@@ -185,15 +184,46 @@ html {
         font-size: 16px;
     }
 }
+@media (max-width: 1280px) {
+
+    .logo-navbar img {
+        height: 80px;
+        width: 80px;
+    }
+
+
+    .navbar-home {
+        gap: 20px;
+    }
+
+
+    .nav-links a {
+        font-size: 18px;
+    }
+
+
+    .nav-links li {
+        margin-left: 20px;
+    }
+
+
+    .mobile-nav-links a {
+        font-size: 22px;
+    }
+
+    .submenu li a {
+        font-size: 16px;
+    }
+}
+
 .custom-texttt {
     text-decoration: none;
     font-size: 24px;
     color: red;
     font-weight: bold;
-  }
-  
-  .custom-texttt:hover {
-    color: rgb(0, 0, 0); 
-    cursor: pointer; 
-  }
-  
+}
+
+.custom-texttt:hover {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}

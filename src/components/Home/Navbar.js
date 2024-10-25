@@ -1,13 +1,55 @@
 import React, { useEffect, useState } from 'react';
-import './Css/NavbarHome.css'; // Updated the CSS filename
+import './Css/NavbarHome.css';
 import { NavLink } from 'react-router-dom';
 import { Dropdown, Menu, Drawer } from 'antd';
 import { CloseOutlined, MenuOutlined } from '@ant-design/icons';
+import { useTranslation } from 'react-i18next';
+
 
 const NavbarHome = () => {
+  const { t, i18n } = useTranslation();
+
+  
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem('language');
+    if (savedLanguage) {
+      const parsedLanguage = JSON.parse(savedLanguage);
+      i18n.changeLanguage(parsedLanguage.name === 'English' ? 'en' : 'vi');  
+      setCurrentLanguage(parsedLanguage); 
+    }
+  }, [i18n]);
+
+  // Khởi tạo ngôn ngữ hiện tại
+  const [currentLanguage, setCurrentLanguage] = useState(() => {
+    const savedLanguage = localStorage.getItem('language');
+    return savedLanguage
+      ? JSON.parse(savedLanguage)
+      : {
+        name: 'English',
+        flag: 'https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg',
+      };
+  });
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);  // Thay đổi ngôn ngữ trong i18n
+    const newLanguage = lng === 'en'
+      ? {
+        name: 'English',
+        flag: 'https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg',
+      }
+      : {
+        name: 'Tiếng Việt',
+        flag: 'https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg',
+      };
+
+    setCurrentLanguage(newLanguage);
+    localStorage.setItem('language', JSON.stringify(newLanguage)); // Lưu ngôn ngữ vào localStorage
+  };
+
   const [isSticky, setSticky] = useState(false);
   const [isDrawerVisible, setDrawerVisible] = useState(false);
   const [isIndustriesExpanded, setIndustriesExpanded] = useState(false);
+
   const handleScroll = () => {
     const offset = window.scrollY;
     if (offset > 10) {
@@ -36,113 +78,133 @@ const NavbarHome = () => {
     <Menu className="custom-menu">
       <Menu.Item key="1">
         <NavLink to="#" onClick={() => window.scrollTo(0, 0)}>
-          Education
+          {t('drawerMenu.education')}
         </NavLink>
       </Menu.Item>
       <Menu.Item key="2">
         <NavLink to="#" onClick={() => window.scrollTo(0, 0)}>
-          Information Technology
+          {t('drawerMenu.informationTechnology')}
         </NavLink>
       </Menu.Item>
       <Menu.Item key="3">
         <NavLink to="#" onClick={() => window.scrollTo(0, 0)}>
-          Energy
+          {t('drawerMenu.energy')}
         </NavLink>
       </Menu.Item>
       <Menu.Item key="4">
         <NavLink to="#" onClick={() => window.scrollTo(0, 0)}>
-          Legal
+          {t('drawerMenu.legal')}
         </NavLink>
       </Menu.Item>
     </Menu>
   );
 
+  const languageMenu = (
+    <Menu>
+      <Menu.Item key="en" onClick={() => changeLanguage('en')}>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg"
+          alt="English"
+          style={{ width: '20px', marginRight: '8px' }}
+        />
+        English
+      </Menu.Item>
+      <Menu.Item key="vi" onClick={() => changeLanguage('vi')}>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg"
+          alt="Tiếng Việt"
+          style={{ width: '20px', marginRight: '8px' }}
+        />
+        Tiếng Việt
+      </Menu.Item>
+    </Menu>
+  );
 
   const toggleIndustries = () => {
     setIndustriesExpanded(!isIndustriesExpanded);
   };
+
   return (
     <>
-      {/* Desktop Navbar */}
       <div className={isSticky ? 'navbar-home sticky' : 'navbar-home'}>
-        <NavLink to={"/"} className="logo" onClick={() => window.scrollTo(0, 0)}>
+        <NavLink to={"/"} className="logo-navbar" onClick={() => window.scrollTo(0, 0)}>
           <img src="/logo16.png" alt="Logo" />
         </NavLink>
         <ul className="nav-links">
           <li>
             <NavLink to="/" onClick={() => window.scrollTo(0, 0)}>
-              Home
+              {t('navbar.home')}
             </NavLink>
           </li>
           <li>
             <Dropdown overlay={industriesMenu}>
               <a className="ant-dropdown-link" onClick={(e) => e.preventDefault()}>
-                Industries
+                {t('navbar.industries')}
               </a>
             </Dropdown>
           </li>
           <li>
             <NavLink to="#" onClick={() => window.scrollTo(0, 0)}>
-              Investor Relations
+              {t('navbar.investorRelations')}
             </NavLink>
           </li>
           <li>
             <NavLink to="/About" onClick={() => window.scrollTo(0, 0)}>
-              About
+              {t('navbar.about')}
             </NavLink>
           </li>
           <li>
             <NavLink to="/Contact" onClick={() => window.scrollTo(0, 0)}>
-              Contact
+              {t('navbar.contact')}
             </NavLink>
           </li>
         </ul>
-        {/* Hamburger Icon for Mobile */}
+        <Dropdown overlay={languageMenu}>
+          <a className="ant-dropdown-link" onClick={(e) => e.preventDefault()}>
+            <img
+              src={currentLanguage.flag}
+              alt={currentLanguage.name}
+              style={{ width: '20px', marginRight: '8px' }}
+            />
+            {currentLanguage.name} <span style={{ paddingLeft: '5px' }}>▼</span>
+          </a>
+        </Dropdown>
+
         <div className="hamburger-icon" onClick={showDrawer}>
           <MenuOutlined style={{ fontSize: '30px' }} />
         </div>
       </div>
-
-      {/* Drawer for Mobile Menu */}
       <Drawer
         title={<span style={{ fontSize: '28px', fontWeight: 'bold', color: 'red', display: 'block' }}>Menu</span>}
         placement="right"
         onClose={closeDrawer}
         visible={isDrawerVisible}
         style={{
-          backgroundColor: "transparent", 
+          backgroundColor: "transparent",
           backdropFilter: "blur(5px)"
-        }}        
+        }}
         closeIcon={
           <CloseOutlined
             style={{ fontSize: '28px', color: 'red', position: 'absolute', right: '20px', top: '30px' }}
           />
-        }  /* Manually setting position as fallback */
+        }
       >
         <ul className="mobile-nav-links">
-          <li><NavLink to="/" onClick={() => { window.scrollTo(0, 0); closeDrawer(); }}>Home</NavLink></li>
+          <li><NavLink to="/" onClick={() => { window.scrollTo(0, 0); closeDrawer(); }}> {t('navbar.home')}</NavLink></li>
           <li onClick={toggleIndustries} style={{ cursor: 'pointer' }}>
-            <span className='custom-texttt'>Industries {isIndustriesExpanded ? '-' : '+'}</span>
+            <span className='custom-texttt'>{t('navbar.industries')} {isIndustriesExpanded ? '-' : '+'}</span>
           </li>
           {isIndustriesExpanded && (
             <ul className="submenu">
-              <li>
-                <NavLink to="#" onClick={() => { window.scrollTo(0, 0); closeDrawer(); }}>Education</NavLink>
-              </li>
-              <li>
-                <NavLink to="#" onClick={() => { window.scrollTo(0, 0); closeDrawer(); }}>Information Technology</NavLink>
-              </li>
-              <li>
-                <NavLink to="#" onClick={() => { window.scrollTo(0, 0); closeDrawer(); }}>Energy</NavLink>
-              </li>
-              <li>
-                <NavLink to="#" onClick={() => { window.scrollTo(0, 0); closeDrawer(); }}>Legal</NavLink>
-              </li>
+              <li><NavLink to="#" onClick={() => { window.scrollTo(0, 0); closeDrawer(); }}>{t('drawerMenu.education')}</NavLink></li>
+              <li><NavLink to="#" onClick={() => { window.scrollTo(0, 0); closeDrawer(); }}>{t('drawerMenu.informationTechnology')}</NavLink></li>
+              <li><NavLink to="#" onClick={() => { window.scrollTo(0, 0); closeDrawer(); }}>{t('drawerMenu.energy')}</NavLink></li>
+              <li><NavLink to="#" onClick={() => { window.scrollTo(0, 0); closeDrawer(); }}>{t('drawerMenu.legal')}</NavLink></li>
             </ul>
           )}
-          <li><NavLink to="/About" onClick={() => { window.scrollTo(0, 0); closeDrawer(); }}>Investor Relations</NavLink></li>
-          <li><NavLink to="/About" onClick={() => { window.scrollTo(0, 0); closeDrawer(); }}>About</NavLink></li>
-          <li><NavLink to="/Contact" onClick={() => { window.scrollTo(0, 0); closeDrawer(); }}>Contact</NavLink></li>
+          <li><NavLink to="/About" onClick={() => { window.scrollTo(0, 0); closeDrawer(); }}>{t('navbar.investorRelations')}</NavLink></li>
+          <li><NavLink to="/About" onClick={() => { window.scrollTo(0, 0); closeDrawer(); }}>{t('navbar.about')}</NavLink></li>
+          <li><NavLink to="/Contact" onClick={() => { window.scrollTo(0, 0); closeDrawer(); }}>{t('navbar.contact')}</NavLink></li>
         </ul>
       </Drawer>
     </>
