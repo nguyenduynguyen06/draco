@@ -1,0 +1,187 @@
+/* Base styles for the navbar */
+.navbar-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: relative;
+    gap: 200px;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-home.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 100px;
+    width: 100px;
+}
+
+/* Default desktop nav styles */
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #000000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Dropdown menu styles for industries */
+.custom-menu .ant-dropdown-menu-item {
+    font-size: 18px !important;
+}
+
+.custom-menu .ant-dropdown-menu-item a {
+    font-size: 18px !important;
+    color: red !important;
+}
+
+.custom-menu .ant-dropdown-menu-item a:hover {
+    color: #000000 !important;
+}
+
+/* Hamburger icon is hidden by default (for desktop) */
+.hamburger-icon {
+    display: none;
+}
+
+@media (max-width: 799px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger-icon {
+        display: block;
+        font-size: 30px;
+        color: red;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+    }
+
+    .navbar-home {
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .logo {
+        margin-left: 30px;
+        /* You can adjust this value to shift it more */
+    }
+
+ 
+    .mobile-nav-links {
+        list-style: none;
+        justify-content: right;
+        align-items: right;
+    }
+
+    .mobile-nav-links li {
+        margin-bottom: 15px;
+    }
+
+    .mobile-nav-links a {
+        font-size: 24px;
+        /* Larger font for mobile */
+        font-weight: bold;
+        color: red;
+        text-decoration: none;
+        display: block;
+        padding: 10px 0;
+    }
+
+    .mobile-nav-links a:hover {
+        color: #000000;
+    }
+
+
+    .ant-drawer-title {
+        font-size: 24px;
+        font-weight: bold;
+        color: red;
+    }
+
+    .ant-drawer-close {
+        font-size: 20px;
+        color: red;
+    }
+}
+
+
+/* Styles for the mobile menu submenu */
+.submenu {
+    padding-left: 20px;
+    /* Indentation for submenu items */
+    list-style: none;
+}
+
+.submenu li {
+    margin-top: 10px;
+}
+
+.submenu li a {
+    font-size: 18px;
+    color: red;
+    text-decoration: none;
+}
+
+.submenu li a:hover {
+    color: black;
+}
+
+@media (max-width: 1280px) {
+
+    .logo img {
+        height: 80px;
+        width: 80px;
+    }
+
+
+    .navbar-home {
+        gap: 100px;
+    }
+
+
+    .nav-links a {
+        font-size: 18px;
+    }
+
+
+    .nav-links li {
+        margin-left: 20px;
+    }
+
+
+    .mobile-nav-links a {
+        font-size: 22px;
+    }
+
+    .submenu li a {
+        font-size: 16px;
+    }
+}

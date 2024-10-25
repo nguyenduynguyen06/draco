@@ -6,10 +6,14 @@ import Industries from "./Industries";
 import NextStep from "./NextStep";
 import Content from "./Content";
 import Advantage from "./Advantage";
+import { Helmet } from "react-helmet";
 
 function Home() {
   return (
     <>
+       <Helmet>
+        <title>Home | Draco Holding</title>
+      </Helmet>
       <Navbar />
       <Header />
       <Content />

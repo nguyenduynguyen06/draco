@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 .about-section {
-    margin-top: 102px;
     display: flex;
     background-color: #002855;
     height: 400px;
@@ -39,16 +38,16 @@
     margin: 70px auto;
     width: 50%;
     text-align: left;
-    font-size: 22px;
+    font-size: 24px;
     font-family: 'Arial', sans-serif;
-    font-weight: 300;
     letter-spacing: 0.5px;
-    color: #333333;
+    font-weight: 300;
     line-height: 1.6;
 }
 
 .about-description p {
     margin-bottom: 20px;
+    color: #333333;
 }
 
 .container-aboutt {
@@ -151,21 +150,21 @@
 /* Media Query for MacBook Air and Larger Screens (up to 1200px) */
 @media (max-width: 1280px) {
     .about-section {
-        flex-direction: row; /* Đổi thành hàng ngang */
+        flex-direction: row; 
         height: auto;
     }
 
     .about-section-text {
         padding-left: 15px;
         font-size: 1.3rem;
-        text-align: left; /* Giữ văn bản canh trái */
+        text-align: left; 
         padding: 20px;
-        flex: 1; /* Giúp chia đều không gian giữa các phần */
+        flex: 1; 
     }
 
     .about-section-image {
         justify-content: center;
-        width: 50%; /* Chiếm 50% màn hình để giữ cân đối */
+        width: 50%; 
     }
 
     .about-section-image img {
@@ -181,8 +180,8 @@
     }
 
     .container-aboutt {
-        flex-direction: row; /* Đổi thành hàng ngang */
-        justify-content: center; /* Canh giữa */
+        flex-direction: row; 
+        justify-content: center; 
         padding: 15px;
     }
 
@@ -195,7 +194,7 @@
     }
 
     .vision-section {
-        flex-direction: row; /* Đổi thành hàng ngang */
+        flex-direction: row;
         height: auto;
         border: 1px solid #000;
     }

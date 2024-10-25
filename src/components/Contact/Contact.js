@@ -9,6 +9,7 @@ import "./contact.css";
 import Header from "../Home/Header";
 import Navbar from "../Home/Navbar";
 import Footer from "../Home/Footer";
+import { Helmet } from "react-helmet";
 
 
 const Contact = () => {
@@ -28,7 +29,10 @@ const Contact = () => {
 
   return (
     <div>
-    <Navbar/>
+      <Helmet>
+        <title>Contact | Draco Holding</title>
+      </Helmet>
+      <Navbar />
       <div className="contact-us-container">
         <div
           className="contact-us-header"
@@ -79,8 +83,8 @@ const Contact = () => {
             ></iframe>
           </div>
         </Modal>
+        <Footer />
       </div>
-      <Footer/>
     </div>
   );
 };

@@ -4,10 +4,14 @@ import Navbar from '../Home/Navbar';
 import About from '../OurMission';
 import Footer from '../Home/Footer';
 import { NavLink } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 const AboutSection = () => {
     return (
         <>
+            <Helmet>
+                <title>About | Draco Holding</title>
+            </Helmet>
             <Navbar />
             <div className="about-section">
                 <div className="about-section-text">
@@ -34,7 +38,7 @@ const AboutSection = () => {
                 <NavLink to="#" className="item-about">Corporate Governance & Sustainability</NavLink>
             </div>
             <div class="vision-section">
-            <div class="vision-image">
+                <div class="vision-image">
                     <img src="https://static-images.vnncdn.net/files/publish/2023/9/26/chuyen-doi-so-2-807.jpg" alt="Vision Image" />
                 </div>
                 <div class="vision-content">

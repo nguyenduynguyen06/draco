@@ -13,6 +13,6 @@ export const routes = [
     },
     {
         path: '/about',
-        page:AboutSection
+        page: AboutSection
     }
 ]
