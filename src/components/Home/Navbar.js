@@ -159,8 +159,8 @@ const NavbarHome = () => {
             </NavLink>
           </li>
         </ul>
-        <Dropdown overlay={languageMenu}>
-          <a className="ant-dropdown-link" onClick={(e) => e.preventDefault()}>
+        <Dropdown overlay={languageMenu} >
+          <a className="ant-dropdown-link" style={{ cursor: 'pointer' }}  onClick={(e) => e.preventDefault()}>
             <img
               src={currentLanguage.flag}
               alt={currentLanguage.name}

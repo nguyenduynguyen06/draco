@@ -54,11 +54,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0;
     padding: 20px;
+    background-color: #f0f0f0;
 }
 
 .item-about {
+    position: relative;
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -80,10 +81,28 @@
     letter-spacing: 0.5px;
 }
 
-.item-about:hover {
-    background-color: #d1cccc;
-    opacity: 0.8;
+.item-about::after {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    inset: 0;
+    border-radius: inherit;
+    background: radial-gradient(#7b797e var(--fill), transparent var(--fill));
     border: 2px solid #110925;
+    transition: --fill 0.3s ease-in-out;
+}
+
+@property --fill {
+    syntax: '<percentage>';
+    inherits: true;
+    initial-value: 0%;
+}
+
+.item-about:hover {
+    color: #ffffff;
+    --fill: 100%;
+    border: none;
+    transform: scale(1.1);
 }
 
 .vision-section {
